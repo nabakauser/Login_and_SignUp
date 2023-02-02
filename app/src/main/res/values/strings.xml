@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Login &amp; SignUp</string>
+    <string name="uiTvName">Username</string>
+    <string name="uiTvEmail">Email</string>
+    <string name="uiTvPassword">Password</string>
+    <string name="uiTvConfirmPassword">Confirm Password</string>
+    <string name="uiTvGender">GENDER</string>
+    <string name="uiButtonSubmit">REGISTER NOW</string>
+    <string name="uiButtonLogout">LOGOUT</string>
+
+
+    <string name="userNameErrorMessage">Username is not entered</string>
+    <string name="emailErrorMessage">Email is not entered</string>
+    <string name="emailFormatErrorMessage">Email format is incorrect</string>
+    <string name="passwordErrorMessage">Password is not entered</string>
+    <string name="passwordStrengthErrorMessage">Password is weak</string>
+    <string name="confirmPasswordErrorMessage">Passwords do not match</string>
+
+    <string name="uiTvOR"> or </string>
+    <string name="uiTvSignUp">Signup</string>
+    <string name="uiTvLoginPrompt">Already have an account? <b>Login</b></string>
+    <string name="uiTvLogin">Login</string>
+    <string name="uiTvSignInPrompt">Don\'t have an account? <b>SignUp</b></string>
+
+    <string-array name="genders">
+        <item> Male </item>
+        <item> Female </item>
+        <item> Transgender </item>
+    </string-array>
+</resources>

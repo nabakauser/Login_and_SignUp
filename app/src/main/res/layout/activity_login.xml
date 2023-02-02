@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/uiTvSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/uiTvLogin"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="32sp"
+        android:gravity="center"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/uiTvSignUpPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/uiTvSignInPrompt"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/uiTvSignUp"
+        app:layout_constraintStart_toStartOf="@id/uiTvSignUp"
+        app:layout_constraintEnd_toEndOf="@id/uiTvSignUp"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/uiEtUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ui_et_name_icon"
+        android:inputType="textPersonName"
+        android:textSize="12sp"
+        android:hint="@string/uiTvName"
+        android:drawablePadding="10dp"
+        android:padding="16dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="24dp"
+        android:elevation="2dp"
+        app:layout_constraintEnd_toEndOf="@id/uiTvSignUpPrompt"
+        app:layout_constraintStart_toStartOf="@id/uiTvSignUpPrompt"
+        app:layout_constraintTop_toBottomOf="@id/uiTvSignUpPrompt" />
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/uiEtPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ui_et_password_icon"
+        android:drawablePadding="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:padding="16dp"
+        android:hint="@string/uiTvPassword"
+        android:inputType="textPassword"
+        android:textSize="12sp"
+        android:elevation="2dp"
+        app:layout_constraintStart_toStartOf="@id/uiEtUserName"
+        app:layout_constraintEnd_toEndOf="@id/uiEtUserName"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/uiEtUserName"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/uiButtonSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_edges"
+        android:backgroundTint="@color/purple_500"
+        android:text="@string/uiTvLogin"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/uiEtPassword"
+        app:layout_constraintStart_toStartOf="@id/uiEtPassword"
+        app:layout_constraintEnd_toEndOf="@id/uiEtPassword"/>
+
+    <View
+        android:id="@+id/uiHorizontalLine"
+        android:layout_width="150dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="16dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toStartOf="@id/uiTvOr"
+        app:layout_constraintStart_toStartOf="@id/uiButtonSubmit"
+        app:layout_constraintTop_toBottomOf="@id/uiButtonSubmit" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/uiTvOr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/uiTvOR"
+        app:layout_constraintStart_toEndOf="@id/uiHorizontalLine"
+        app:layout_constraintTop_toBottomOf="@id/uiButtonSubmit" />
+
+    <View
+        android:id="@+id/uiHorizontalLineRight"
+        android:layout_width="150dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/black"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@id/uiTvOr"
+        app:layout_constraintTop_toBottomOf="@id/uiButtonSubmit" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/uiIvGoogle"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="50dp"
+        android:background="@color/white"
+        android:elevation="5dp"
+        android:src="@drawable/google"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/uiTvOr" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/uiIvFb"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:elevation="5dp"
+        android:src="@drawable/fb"
+        app:layout_constraintStart_toEndOf="@id/uiIvGoogle"
+        app:layout_constraintTop_toBottomOf="@id/uiTvOr" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/uiIvTwitter"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:elevation="5dp"
+        app:layout_constraintStart_toEndOf="@id/uiIvFb"
+        app:layout_constraintTop_toBottomOf="@id/uiTvOr"
+        app:srcCompat="@drawable/twitter" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/uiIvIos"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:elevation="5dp"
+        app:layout_constraintStart_toEndOf="@id/uiIvTwitter"
+        app:layout_constraintTop_toBottomOf="@id/uiTvOr"
+        app:srcCompat="@drawable/apple" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
